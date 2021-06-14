@@ -1,9 +1,37 @@
-[ ] Map out the table of Recipes attributes namespace and datatypes
-[ ] Run rails g scaffold --no-test-framework 
-[ ] Seed in data into seeds.rb
-[ ] Run npm create app in the frontend 
-[ ] Build 
+Rails (backend)
+[X] Map out the table of Recipes attributes namespace and datatypes
+[X] Run rails g scaffold --no-test-framework 
+[X] Recipe.create(name: "")
+[X] Seed in data into seeds.rb
+#1 Recipe.create(name: "Butter Chicken" )
+Rails Database commands
+[X] rails g scaffold recipes name cuisine_country dietary_type time_to_cook:integer spice_level rating:integer serving_size:integer skill_level --no-test-framework
+[ ] Model validations
+
+
+#2 Recipe.create(name: "Omlette" )
+#3 Recipe.create(name: "Egg Drop Soup" )
+#4 Recipe.create(name: "Carnitas" )
+
+React & Redux
+[ ] write ES6 as much as possbile
+[ ] Run npm create-react-app in the frontend 
+[ ] Store, Actions, Reducers
+[ ] 2 container components
+[ ] 5 stateless components
+[ ] 3 routes
+[ ] react-router is being used with proper RESTful routing
+[ ] add Redux and redux-thunk middleware to modify state change and make use of async actions to send data and receive data from the server
+[ ] use Rails API backend to persit data for the app
+[ ] react/redux state flow
+[ ] state and props in React
+[ ] async JS with Promises
+[ ] Install these packages: 
+    gem 'active_model_serializers' 
+    rails g serializer recipe
 Recipes 
+
+
 
 cuisines = [
     "pasta", 
@@ -28,9 +56,9 @@ rating - [1,2,3]
 setving_size -- 1, 2 integers
 skill level - easy, medium, hard
 
-Potential 2nd table/model
+
+Potential 2nd table/model 
 steps --list of string [X]
 ingredients [X]
 
-rails g scaffold recipes name cuisine_country dietary_type time_to_cook:integer spice_level rating:integer serving_size:integer skill_level --no-test-framework
 
