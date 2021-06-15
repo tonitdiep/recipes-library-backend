@@ -1,5 +1,3 @@
-class RecipeSerializer
-  include JSONAPI::Serializer
-  # attributes :name, :cuisine_country, :dietary_type, :spice_level, :serving_size, :skill_level
-  attributes :id, :name, :dietary_type, :cuisine_country, :spice_level
+class RecipeSerializer < ActiveModel::Serializer
+  attributes :id, :name, :cuisine_country, :dietary_type, :time_to_cook, :spice_level, :serving_size, :skill_level
 end

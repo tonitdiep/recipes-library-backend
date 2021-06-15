@@ -6,7 +6,7 @@ Rails (backend)
 #1 Recipe.create(name: "Butter Chicken" )
 Rails Database commands
 [X] rails g scaffold recipes name cuisine_country dietary_type time_to_cook:integer spice_level rating:integer serving_size:integer skill_level --no-test-framework
-[ ] Model validations
+[ ] Model validations, maybe?
 
 
 #2 Recipe.create(name: "Omlette" )
@@ -15,7 +15,7 @@ Rails Database commands
 
 React & Redux
 [ ] write ES6 as much as possbile
-[ ] Run npm create-react-app in the frontend 
+[X] Run npm create-react-app in the frontend 
 [ ] Store, Actions, Reducers
 [ ] 2 container components
 [ ] 5 stateless components
