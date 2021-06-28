@@ -55,6 +55,6 @@ byebug
     # end
 
     def recipe_params
-      params.require(:recipe).permit(:id, :name, :cuisine_country, :dietary_type, :cook_time, :spice_level, :rating, :serving_size, :skill_level)
+      params.require(:recipe).permit(:name, :cuisine_country, :dietary_type, :cook_time, :spice_level, :rating, :serving_size, :skill_level)
     end
 end
