@@ -4,7 +4,7 @@ class CreateRecipes < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :cuisine_country
       t.string :dietary_type
-      t.integer :time_to_cook
+      t.integer :cook_time
       t.string :spice_level
       t.integer :rating
       t.integer :serving_size

@@ -9,6 +9,7 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def show
+byebug
     recipe = Recipe.find(params[:id])
     render json: recipe
     # render json: RecipeSerializer.new(recipe)
@@ -16,25 +17,35 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def create
+    # binding.pry
     recipe = Recipe.new(recipe_params)
 
     if recipe.save
-      render json: RecipeSerializer, status: :created, location: recipe
+      render json: recipe
     else
-      render json: RecipeSerializer.errors, status: :unprocessable_entity
+      render json: {error: 'Error creating this recipe'}
+      # render json: RecipeSerializer.errors, status: :unprocessable_entity
     end
   end
 
   def update
-    if recipe.update(recipe_params)
-      render json: RecipeSerializer
-    else
-      render json: RecipeSerializer.errors, status: :unprocessable_entity
-    end
+    recipe = Recipe.find(params[:id])
+    recipe.update(name: params["recipe"]["name"])
+    recipe.save
+    render json: recipe
+    # if recipe.update(recipe_params)
+    #   render json: RecipeSerializer
+    # else
+    #   render json: RecipeSerializer.errors, status: :unprocessable_entity
+    # end
   end
 
   def destroy
+    # recipe.destroy
+    # byebug
+    recipe = Recipe.find(params[:id])
     recipe.destroy
+    render json: 'recipes'
   end
 
   private
@@ -44,6 +55,6 @@ class Api::V1::RecipesController < ApplicationController
     # end
 
     def recipe_params
-      params.require(:recipe).permit(:name, :cuisine_country, :dietary_type, :time_to_cook, :spice_level, :rating, :serving_size, :skill_level)
+      params.require(:recipe).permit(:id, :name, :cuisine_country, :dietary_type, :cook_time, :spice_level, :rating, :serving_size, :skill_level)
     end
 end
