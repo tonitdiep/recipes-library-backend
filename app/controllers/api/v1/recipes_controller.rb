@@ -1,16 +1,14 @@
 class Api::V1::RecipesController < ApplicationController
   # before_action :set_recipe, only: [:show, :update, :destroy]
-
+  # before_action :set_recipe, only: [:index]
   def index
-    byebug
     recipes = Recipe.all
-
     render json: recipes 
     # render json: RecipeSerializer.new(recipes)
   end
 
   def show
-byebug
+
     recipe = Recipe.find(params[:id])
     render json: recipe
     # render json: RecipeSerializer.new(recipe)
@@ -22,7 +20,7 @@ byebug
     recipe = Recipe.new(recipe_params)
 
     if recipe.save
-      render json: recipe
+      render json: recipes
     else
       render json: {error: 'Error creating this recipe'}
       # render json: RecipeSerializer.errors, status: :unprocessable_entity
@@ -56,6 +54,6 @@ byebug
     # end
 
     def recipe_params
-      params.require(:recipe).permit(:name, :cuisine_country, :dietary_type, :cook_time, :spice_level, :rating, :serving_size, :skill_level)
+      params.require(:recipe).permit(:name, :cuisine_country, :dietary_type, :cook_time, :spice_level, :rating, :serving_size, :skill_level, :starred)
     end
 end
