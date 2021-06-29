@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_11_230520) do
+ActiveRecord::Schema.define(version: 2021_06_29_001217) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2021_06_11_230520) do
     t.string "skill_level"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "starred", default: false
   end
 
 end

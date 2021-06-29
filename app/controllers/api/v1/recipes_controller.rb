@@ -2,6 +2,7 @@ class Api::V1::RecipesController < ApplicationController
   # before_action :set_recipe, only: [:show, :update, :destroy]
 
   def index
+    byebug
     recipes = Recipe.all
 
     render json: recipes 
