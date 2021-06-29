@@ -8,7 +8,7 @@ class CreateRecipes < ActiveRecord::Migration[6.1]
       t.string :spice_level
       t.integer :rating
       t.integer :serving_size
-      t.string :skill_level
+      t.integer :skill_level
 
       t.timestamps
     end

@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_06_29_001217) do
     t.string "spice_level"
     t.integer "rating"
     t.integer "serving_size"
-    t.string "skill_level"
+    t.integer "skill_level"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "starred", default: false

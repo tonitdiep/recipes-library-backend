@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Backend Repo: https://github.com/tonitdiep/recipes-library-backend
 
-Things you may want to cover:
+Running Backend Steps:
 
-* Ruby version
+* Run 'bundle install' 
 
-* System dependencies
+* Run 'rails s' to start up API
 
-* Configuration
+* If necessary, run 'rails db:migrate' and then 'rails db:seed' after 'bundle install' to finally running 'rails s' for an overall starting up for the backend
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
