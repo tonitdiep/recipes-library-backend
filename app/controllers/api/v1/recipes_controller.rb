@@ -3,8 +3,8 @@ class Api::V1::RecipesController < ApplicationController
   # before_action :set_recipe, only: [:index]
   def index
     recipes = Recipe.all
-    render json: RecipeSerializer.new(recipes)
-    # render json: recipes
+    # render json: RecipeSerializer.new(recipes)
+    render json: recipes
   end
 
   def show
@@ -20,7 +20,8 @@ byebug
     recipe = Recipe.new(recipe_params)
 
     if recipe.save
-      render json: RecipeSerializer.new(recipe)
+      # render json: RecipeSerializer.new(recipe)
+      render json: recipe
     else
       render json: {error: 'Error creating this recipe'}
       # render json: RecipeSerializer.errors, status: :unprocessable_entity
