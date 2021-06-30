@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_06_29_001217) do
     t.string "cuisine_country"
     t.string "dietary_type"
     t.integer "cook_time"
-    t.string "spice_level"
+    t.integer "spice_level"
     t.integer "rating"
     t.integer "serving_size"
     t.integer "skill_level"
