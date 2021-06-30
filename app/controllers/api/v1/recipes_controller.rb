@@ -3,12 +3,12 @@ class Api::V1::RecipesController < ApplicationController
   # before_action :set_recipe, only: [:index]
   def index
     recipes = Recipe.all
-    render json: recipes 
-    # render json: RecipeSerializer.new(recipes)
+    render json: RecipeSerializer.new(recipes)
+    # render json: recipes
   end
 
   def show
-
+byebug
     recipe = Recipe.find(params[:id])
     render json: recipe
     # render json: RecipeSerializer.new(recipe)
@@ -20,31 +20,32 @@ class Api::V1::RecipesController < ApplicationController
     recipe = Recipe.new(recipe_params)
 
     if recipe.save
-      render json: recipes
+      render json: RecipeSerializer.new(recipe)
     else
       render json: {error: 'Error creating this recipe'}
       # render json: RecipeSerializer.errors, status: :unprocessable_entity
     end
   end
 
-  def update
-    recipe = Recipe.find(params[:id])
-    recipe.update(name: params["recipe"]["name"])
-    recipe.save
-    render json: recipe
-    # if recipe.update(recipe_params)
-    #   render json: RecipeSerializer
-    # else
-    #   render json: RecipeSerializer.errors, status: :unprocessable_entity
-    # end
-  end
+  # def update
+  #   recipe = Recipe.find(params[:id])
+  #   recipe.update(name: params["recipe"]["name"])
+  #   recipe.save
+  #   render json: recipe
+  #   # if recipe.update(recipe_params)
+  #   #   render json: RecipeSerializer
+  #   # else
+  #   #   render json: RecipeSerializer.errors, status: :unprocessable_entity
+  #   # end
+  # end
 
   def destroy
     # recipe.destroy
     # byebug
     recipe = Recipe.find(params[:id])
+    recipe_id = recipe.id
     recipe.destroy
-    render json: 'recipes'
+    # render json: 'recipes'
   end
 
   private
