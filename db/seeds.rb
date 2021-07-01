@@ -8,9 +8,9 @@
 
 
 Recipe.create([
-    {name: "Butter Chicken", cuisine_country: "Indian", dietary_type: "low carb", cook_time: 30, spice_level: "spicy", rating: 3, serving_size: 1, skill_level: "easy", starred: 1}, 
-    {name: "Omlette", cuisine_country: "French", dietary_type: "keto", cook_time: 15, spice_level: "mild", rating: 1, serving_size: 1, skill_level: "difficult", starred: 1}, 
-    {name: "Carnitas", cuisine_country: "Mexican", dietary_type: "low carb", cook_time: 30, spice_level: "none", rating: 2, serving_size: 1, skill_level: "easy", starred: 0} 
+    {name: "Butter Chicken", cuisine_country: "Indian", dietary_type: "low carb", cook_time: 30, spice_level: 0, rating: 3, serving_size: 0, skill_level: "easy", starred: 1}, 
+    {name: "Omlette", cuisine_country: "French", dietary_type: "keto", cook_time: 15, spice_level: 2, rating: 1, serving_size: 1, skill_level: "difficult", starred: 1}, 
+    {name: "Carnitas", cuisine_country: "Mexican", dietary_type: "low carb", cook_time: 30, spice_level: 1, rating: 2, serving_size: 2, skill_level: "easy", starred: 0} 
 ])
 
 # INSERT INTO "recipes" VALUES (1,'Butter Chicken','Indian','low carb',' 30 mins','mild',3,2,'easy','2021-06-12 05:56:32.179862','2021-06-12 05:56:32.179862');
