@@ -16,7 +16,7 @@ byebug
   end
 
   def create
-    # binding.pry
+
     recipe = Recipe.new(recipe_params)
 
     if recipe.save
@@ -46,7 +46,7 @@ byebug
     recipe = Recipe.find(params[:id])
     recipe_id = recipe.id
     recipe.destroy
-    # render json: 'recipes'
+    render json: recipe_id
   end
 
   private
@@ -56,6 +56,7 @@ byebug
     # end
 
     def recipe_params
+      
       params.require(:recipe).permit(:name, :cuisine_country, :dietary_type, :cook_time, :spice_level, :rating, :serving_size, :skill_level, :starred, :rating)
     end
 end
