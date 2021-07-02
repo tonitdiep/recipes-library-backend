@@ -14,11 +14,11 @@ Rails Database commands
 #4 Recipe.create(name: "Carnitas" )
 
 React & Redux
-[ ] write ES6 as much as possbile
+[X] write ES6 as much as possbile
 [X] Run npm create-react-app in the frontend 
-[ ] Store, Actions, Reducers
-[ ] 2 container components
-[ ] 5 stateless components
+[X] Store, Actions, Reducers
+[] 2 container components
+[X] 5 stateless components
 [ ] 3 routes
 [ ] react-router is being used with proper RESTful routing
 [ ] add Redux and redux-thunk middleware to modify state change and make use of async actions to send data and receive data from the server
