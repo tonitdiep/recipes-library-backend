@@ -41,8 +41,6 @@ byebug
   # end
 
   def destroy
-    # recipe.destroy
-    # byebug
     recipe = Recipe.find(params[:id])
     recipe_id = recipe.id
     recipe.destroy
