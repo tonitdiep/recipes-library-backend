@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2021_06_29_001217) do
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.string "cuisine_country"
-    t.string "dietary_type"
+    t.integer "dietary_type"
     t.integer "cook_time"
     t.integer "spice_level"
     t.integer "rating"
