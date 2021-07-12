@@ -1,6 +1,5 @@
 class Api::V1::RecipesController < ApplicationController
-  # before_action :set_recipe, only: [:show, :update, :destroy]
-  # before_action :set_recipe, only: [:index]
+
   def index
     recipes = Recipe.all
     render json: recipes
