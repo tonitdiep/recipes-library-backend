@@ -1,6 +1,6 @@
-**Recipe Application Notepad**
+#Recipe Application Notepad**
 
-Rails (backend)
+**Rails (backend)**
 - [X] Map out the table of Recipes attributes namespace and datatypes
 - [X] Run rails g scaffold --no-test-framework 
 - [X] Recipe.create(name: "")
