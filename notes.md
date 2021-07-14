@@ -1,4 +1,4 @@
-Recipe Application Notepad
+**Recipe Application Notepad**
 
 Rails (backend)
 [X] Map out the table of Recipes attributes namespace and datatypes
@@ -15,7 +15,7 @@ Rails Database commands
 #3 Recipe.create(name: "Egg Drop Soup" )
 #4 Recipe.create(name: "Carnitas" )
 
-React & Redux
+**React & Redux**
 [X] write ES6 as much as possbile
 [X] Run npm create-react-app in the frontend 
 [X] Store, Actions, Reducers
