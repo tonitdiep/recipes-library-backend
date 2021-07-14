@@ -31,10 +31,10 @@ React & Redux
 [X] Install these packages: 
     gem 'active_model_serializers' 
     rails g serializer recipe
+
+
 Recipes 
-
-
-
+```
 cuisines = [
     "pasta", 
     "meat", 
@@ -57,7 +57,7 @@ spice_level - mild, spicy, way hot
 rating - [1,2,3]
 setving_size -- 1, 2 integers
 skill level - easy, medium, hard
-
+```
 
 Potential 2nd table/model 
 steps --list of string [X]
