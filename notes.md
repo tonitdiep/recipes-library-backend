@@ -33,7 +33,7 @@ React & Redux
     rails g serializer recipe
 
 
-Recipes 
+**Recipes** 
 ```
 cuisines = [
     "pasta", 
