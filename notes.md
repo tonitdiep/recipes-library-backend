@@ -1,4 +1,4 @@
-#Recipe Application Notepad**
+# Recipe Application Notepad
 
 **Rails (backend)**
 - [X] Map out the table of Recipes attributes namespace and datatypes
