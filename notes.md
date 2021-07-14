@@ -1,3 +1,5 @@
+Recipe Application Notepad
+
 Rails (backend)
 [X] Map out the table of Recipes attributes namespace and datatypes
 [X] Run rails g scaffold --no-test-framework 
@@ -19,14 +21,14 @@ React & Redux
 [X] Store, Actions, Reducers
 [] 2 container components
 [X] 5 stateless components
-[ ] 3 routes
-[ ] react-router is being used with proper RESTful routing
-[ ] add Redux and redux-thunk middleware to modify state change and make use of async actions to send data and receive data from the server
-[ ] use Rails API backend to persit data for the app
-[ ] react/redux state flow
-[ ] state and props in React
-[ ] async JS with Promises
-[ ] Install these packages: 
+[X] 3 routes
+[X] react-router is being used with proper RESTful routing
+[X] add Redux and redux-thunk middleware to modify state change and make use of async actions to send data and receive data from the server
+[X] use Rails API backend to persit data for the app
+[X] react/redux state flow
+[X] state and props in React
+[X] async JS with Promises
+[X] Install these packages: 
     gem 'active_model_serializers' 
     rails g serializer recipe
 Recipes 
