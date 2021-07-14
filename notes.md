@@ -1,9 +1,9 @@
 **Recipe Application Notepad**
 
 Rails (backend)
-[X] Map out the table of Recipes attributes namespace and datatypes
-[X] Run rails g scaffold --no-test-framework 
-[X] Recipe.create(name: "")
+- [X] Map out the table of Recipes attributes namespace and datatypes
+- [X] Run rails g scaffold --no-test-framework 
+- [X] Recipe.create(name: "")
 [X] Seed in data into seeds.rb
 #1 Recipe.create(name: "Butter Chicken" )
 Rails Database commands
